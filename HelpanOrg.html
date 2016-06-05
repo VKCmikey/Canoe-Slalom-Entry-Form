@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+ <head>
+ <meta charset = "UTF-8">
+ <title>Help an Organsier</title>
+ <script type = "text/javascript">
+  function sayHi(){
+  var txtEvent = document.getElementById("txtEvent");
+  var txtDiv = document.getElementById("txtDiv");
+  var txtClass = document.getElementById("txtClass");
+  var txtMW = document.getElementById("txtMW");
+  var txtBib = document.getElementById("txtBib");
+  var txtFName = document.getElementById("txtFName");
+  var txtSName = document.getElementById("txtSName");
+  var txtC2FName = document.getElementById("txtC2FName");
+  var txtC2SName = document.getElementById("txtC2SName");
+  var txtCat = document.getElementById("txtCat");
+  var txtClub = document.getElementById("txtClub");
+  var event = txtEvent.value;  
+  var div = txtDiv.value;
+  var cls = txtClass.value;
+  var mw = txtMW.value;
+  var bib = txtBib.value;
+  var fname = txtFName.value;
+  var sname = txtSName.value;
+  var C2fname = txtC2FName.value;
+  var C2sname = txtC2SName.value;  
+  var cat = txtCat.value;
+  var club = txtClub.value;
+  fcardnameOut.value = fname + " " + sname
+  fcardClubOut.value = club
+  fcardBibOut.value = bib
+  fcardCatOut.value = cat
+  fcardMWout.value = mw
+  fcardClsOut.value = cls
+  fcardDivOut.value = div
+  rcard1BibOut.value = bib
+  rcardDivOut.value = div
+  rcard2BibOut.value = bib
+  rcardCatOut.value = cat
+  rcardClsMWOut.value = cls + mw
+  rcardC2Out.value = C2fname + " " + C2sname
+  rcardSnameOut.value = sname
+  rcardFnameOut.value = fname
+  rcardClubOut.value = club
+  chequeNameOut.value = fname + " " + sname
+  chequeDivOut.value = div
+  chequeClsMWOut.value = cls +mw
+  chequeBibOut.value = bib
+  ChequeEventOut.value = event
+  emailEventOut.value = event
+  emailDivOut.value = div
+  emailClsOut.value = cls
+  emailBibOut.value = bib
+  emailnameOut.value = fname + " " + sname
+  emailc2nameOut.value = C2fname + " " + C2sname
+  emailCatOut.value = cat
+  emailClubOut.value = club
+  emailMWOut.value = mw
+  } // end sayHi
+ </script>
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "textBoxes.css" />
+ </head>
+ <body>
+ <a name="top"></a>
+ <h1>Example Slalom Card, Payment and Email Information</h1>
+ Help the organisers by ensuring all the information they get is correct! <br> 
+ <form action = "">
+  <fieldset>
+  Fill in the form in this box to see examples below:<br>
+  <label>Single (sat or Sun) or Double (Sat and Sun) Entry:</label>
+  <input type = "text" id = "txtEvent" /><br>   
+  <label>Division (Prem,1,2,3,4):</label>
+  <input type = "text" id = "txtDiv" /><br> 
+  <label>Class (K1, C1, C2):</label>
+  <input type = "text" id = "txtClass" /><br> 
+  <label>Gender (M or W):</label>
+  <input type = "text" id = "txtMW" /><br>   
+  <label>Bib Number:</label>
+  <input type = "text" id = "txtBib" /><br> 
+  <label>First name: </label>
+  <input type = "text" id = "txtFName" /><br>
+  <label>Surname name: </label>
+  <input type = "text" id = "txtSName" /><br>  
+  <label>C2 First name: </label>
+  <input type = "text" id = "txtC2FName" /><br>
+  <label>C2 Surname name: </label>
+  <input type = "text" id = "txtC2SName" /><br>  
+  <label>Category (J10, J12, J14, J16, J18, U23, S, M, V):</label>
+  <input type = "text" id = "txtCat" /><br>  
+  <label>Club:</label>
+  <input type = "text" id = "txtClub" /><br>  
+  
+  
+  
+  
+  <input type = "button"
+    value = "Submit"
+    onclick = "sayHi()"/>
+
+  </fieldset>
+Menu<br>
+<a href="#card">Example Card</a><br>
+<a href="#front">Example Card Front</a><br>
+<a href="#back">Example Card Back</a><br>
+<a href="#cheque">Cheque Payments addition information</a><br>
+<a href="#email">Example Email Template</a><br>
+<a href="#checklist">Quick Checklist</a><br>
+
+
+<H2 id="card"> Example Card </H2>
+Will explain each side of the card. Please ensure that you fill in all of the card to save the organisers time.
+
+<H3 id="front"> Front of the Card (Portrait Side) </H3>
+<h4>Starting at the top.</h4>
+Name: <input type = "text" id = "fcardnameOut" /><br>
+Club: <input type = "text" id = "fcardClubOut" /><br>
+<h4>Run 1 and Run 2 columns left blank</h4>
+<h4>Centre column</h4>
+Start No. This is the bib number unless otherwise told: <input type = "text" id = "fcardBibOut" /><br>
+Best Total: Leave Blank<br>
+Status: <input type = "text" id = "fcardCatOut" /><br>
+M/W: <input type = "text" id = "fcardMWout" /><br>
+Class:<input type = "text" id = "fcardClsOut" /><br>
+Div:<input type = "text" id = "fcardDivOut" /><br>
+
+<H3 id-"back"> Back of the Card (Landscape Side) </H3>
+<h4>Left Vertical Column </h4>
+Bib: <input type = "text" id = "rcard1BibOut" /><br>
+Best Score: Left Blank <br>
+<h4>Top Centre Box</H4>
+I wish to enter *EVENT NAME* slalom on *Date (1 card per day)*<br>
+in the following DIV <input type = "text" id = "rcardDivOut" /><br>
+Bib or ranking list number (blank if not known) <input type = "text" id = "rcard2BibOut" /><br>
+or promoted at: if recently promoted and you don't yet have your bib number state which event you were promoted at <br>
+Signature: This is very important. Please make sure all cards are signed.<br>
+Circle the following:<br>
+<input type = "text" id = "rcardCatOut" /><br>
+<input type = "text" id = "rcardClsMWOut" /><br>
+Entry Fee: Please state the total for either the single or double entry. <br>
+<h4>C2 Partner/2nd Team Member</H4>
+Fill in the details of your 2nd team member or use the C2 Details:
+Name: <input type = "text" id = "rcardC2Out" /><br>
+Y of B: Year of Birth<br>
+Affiliation No: CE/SCA/CW/CANI number
+<h4>3rd Team Member</H4>
+For team runs. as previous but also Team name<br>
+<h4> Right Column</h4>
+Surname: <input type = "text" id = "rcardSnameOut" /><br>
+First name: <input type = "text" id = "rcardFnameOut" /><br>
+Club: <input type = "text" id = "rcardClubOut" /><br>
+Year of Birth: Paddlers Year of Birth <br>
+CE/SCA/CW/CANI No: Affiliation number <br>
+Address: Paddlers Address <br>
+Postcode: Paddlers Postcode <br>
+Email: Quick way of getting in contact if there is a problem so please write it clearly<br>
+<a href="#top">Back to top of page</a><br>
+<H2 id="cheque">Cheque Payments additional information</H2>
+<h4>Please do not post date the cheques. Can cause the clubs to pay fees if the cheque is rejected. </H4>
+Organisers get a lot of cheques and its not always clear whos cheque is for who so on the back of the cheque for each paddlers fees write:<br>
+<input type = "text" id = "chequeNameOut" /> <input type = "text" id = "chequeDivOut" /> <input type = "text" id = "chequeClsMWOut" /> <input type = "text" id = "chequeBibOut" /> <input type = "text" id = "ChequeEventOut" /> £* <br>
+(name, division, class, M/W, Bib, Single/Double, *Fee Amount)<br>
+<a href="#top">Back to top of page</a><br>
+
+<H2 id="email">Example Email Template</H2>
+ Hi there, <br>
+ I would like to enter a <input type = "text" id = "emailEventOut" /> entry at *event* on the *date* with the following information:  <br> 
+ Division: <input type = "text" id = "emailDivOut" /> Class: <input type = "text" id = "emailClsOut" /> Gender: <input type = "text" id = "emailMWOut" /> Bib: <input type = "text" id = "emailBibOut" /> Name/s: <input type = "text" id = "emailnameOut" />  *and C2 partner <input type = "text" id = "emailc2nameOut" />  name* Cat: <input type = "text" id = "emailCatOut" /> Club: <input type = "text" id = "emailClubOut" />
+<br>
+* add in each paddler you are entering* <br>
+* Add a summary, with payment amount, such as: above is two double division 2 entries,  2 x £17 minus the multi-class discount is £31. I will send the cards tomorrow/bring them and the payment on the day* <br>
+Many Thanks<br>
+*Name*<br>
+<a href="#top">Back to top of page</a><br>
+<H2 id="checklist"> Quick Checklist </H2>
+Front of card filled in<br>
+Back of card filled in and SIGNED<br>
+Correct payment, <a href="https://github.com/VKCmikey/Canoe-Slalom-Calculator">see for an entry fees calculator</a><br>
+Information on back of cheque<br>
+<a href="#top">Back to top of page</a><br>
+
+ </form>
+ </body>
+</html>
