@@ -58,6 +58,7 @@
   emailClubOut.value = club
   emailMWOut.value = mw
   } // end sayHi
+
  </script>
  <link rel = "stylesheet"
    type = "text/css"
@@ -65,6 +66,7 @@
  </head>
  <body>
  <a name="top"></a>
+
  <h1>Example Slalom Card, Payment and Email Information</h1>
  Help the organisers by ensuring all the information they get is correct! <br> 
  <form action = "">
@@ -92,21 +94,19 @@
   <input type = "text" id = "txtCat" /><br>  
   <label>Club:</label>
   <input type = "text" id = "txtClub" /><br>  
-  
-  
-  
-  
+
   <input type = "button"
     value = "Submit"
     onclick = "sayHi()"/>
 
   </fieldset>
+
 Menu<br>
 <a href="#card">Example Card</a><br>
 <a href="#front">Example Card Front</a><br>
 <a href="#back">Example Card Back</a><br>
 <a href="#cheque">Cheque Payments addition information</a><br>
-<a href="#email">Example Email Template</a><br>
+<a href="#email">Email Entries</a><br>
 <a href="#checklist">Quick Checklist</a><br>
 
 
@@ -119,11 +119,11 @@ Name: <input type = "text" id = "fcardnameOut" /><br>
 Club: <input type = "text" id = "fcardClubOut" /><br>
 <h4>Run 1 and Run 2 columns left blank</h4>
 <h4>Centre column</h4>
-Start No. This is the bib number unless otherwise told: <input type = "text" id = "fcardBibOut" /><br>
+Start No. This is the bib number unless otherwise told (blank for div 4s): <input type = "text" id = "fcardBibOut" /><br>
 Best Total: Leave Blank<br>
-Status: <input type = "text" id = "fcardCatOut" /><br>
+Status(eg J16): <input type = "text" id = "fcardCatOut" /><br>
 M/W: <input type = "text" id = "fcardMWout" /><br>
-Class:<input type = "text" id = "fcardClsOut" /><br>
+Class(K1/C1/C2):<input type = "text" id = "fcardClsOut" /><br>
 Div:<input type = "text" id = "fcardDivOut" /><br>
 
 <H3 id-"back"> Back of the Card (Landscape Side) </H3>
@@ -157,20 +157,31 @@ Address: Paddlers Address <br>
 Postcode: Paddlers Postcode <br>
 Email: Quick way of getting in contact if there is a problem so please write it clearly<br>
 <a href="#top">Back to top of page</a><br>
+
 <H2 id="cheque">Cheque Payments additional information</H2>
-<h4>Please do not post date the cheques. Can cause the clubs to pay fees if the cheque is rejected. </H4>
+<h4>Please do not post date the cheques.* Can cause the clubs to pay fees if the cheque is rejected. </H4>
 Organisers get a lot of cheques and its not always clear whos cheque is for who so on the back of the cheque for each paddlers fees write:<br>
 <input type = "text" id = "chequeNameOut" /> <input type = "text" id = "chequeDivOut" /> <input type = "text" id = "chequeClsMWOut" /> <input type = "text" id = "chequeBibOut" /> <input type = "text" id = "ChequeEventOut" /> £* <br>
 (name, division, class, M/W, Bib, Single/Double, *Fee Amount)<br>
+<p>Remember to sign the cheque</p>
+<p>*Exception: If you are entering a competition that is 6mths or more away, then post-date the cheque to five months before the competition date </p>
 <a href="#top">Back to top of page</a><br>
 
-<H2 id="email">Example Email Template</H2>
+<H2 id="email">Email Entries</H2>
+<p>If you are entering a Prem or Div 1 event then DO NOT send an email entry.  It will be ignored!  Only possible exception is if you are entering to do an official run.</p>
+<p>For other divisions use online entry system if one is provided.  If you want to enter by email, please remember that:</p>
+<ul>
+  <li>If the event fills up then those who have sent payment will take priority</li>
+  <li>If your entry is accepted then the rules state that you are still required to pay, EVEN IF YOU CHANGE YOUR MIND.  However, at div 3/4 events organisers will be more lienient so just tell them in advance if it is a provisional entry.  They would probably rather have the provisional entries.</li>
+  <li>It is better not to both enter by email and by post as this just means that the organiser has to cross check</li>
+</ul>
+<H3>Example Email Template</H3>
  Hi there, <br>
  I would like to enter a <input type = "text" id = "emailEventOut" /> entry at *event* on the *date* with the following information:  <br> 
  Division: <input type = "text" id = "emailDivOut" /> Class: <input type = "text" id = "emailClsOut" /> Gender: <input type = "text" id = "emailMWOut" /> Bib: <input type = "text" id = "emailBibOut" /> Name/s: <input type = "text" id = "emailnameOut" />  *and C2 partner <input type = "text" id = "emailc2nameOut" />  name* Cat: <input type = "text" id = "emailCatOut" /> Club: <input type = "text" id = "emailClubOut" />
 <br>
 * add in each paddler you are entering* <br>
-* Add a summary, with payment amount, such as: above is two double division 2 entries,  2 x £17 minus the multi-class discount is £31. I will send the cards tomorrow/bring them and the payment on the day* <br>
+* Add a summary, with payment amount, such as: above is two double division 2 entries,  2 x £17 minus the multi-class discount is £31. I will bring the cards and the payment on the day* <br>
 Many Thanks<br>
 *Name*<br>
 <a href="#top">Back to top of page</a><br>
